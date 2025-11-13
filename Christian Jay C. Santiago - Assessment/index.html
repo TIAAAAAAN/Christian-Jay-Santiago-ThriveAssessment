@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Jay C. Santiago</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="favicon.png" type="image/svg">
+</head>
+<body id="top">
+    <nav>
+        <a href="#top" class="logo-link"><h1> CeeJay</h1></a>
+        <ul>
+            <li><a href="#top" id="home-link">Home</a></li>
+            <li><a href="#questions" id="questions-link" class="active">Questions</a></li>
+            <li><a href="#footer" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="welcome">
+            <h2>Welcome, I'm Christian Jay. This site contains the answers to the following questions for the assessment for the Web Development Technology Tech Support position.</h2>
+        </section>
+
+        <section id="questions">
+            <div class="grid">
+                <div class="card" onclick="toggleAnswer(0)">
+                    <div class="card-front">
+                        <i class="fas fa-code"></i>
+                        <p>Talk about how you made your site and why you chose the tools you did. Briefly explain one challenge you experienced in setting up this site and how you overcame it.</p>
+                    </div>
+                    <div class="card-back" id="answer0">
+                        <p>I made my site using HTML, CSS, and a bit of JavaScript in Visual Studio because they are simple and effective tools for building a clean, functional layout. One challenge I faced was finding the right color scheme and deciding how to display the questions and answers clearly. I overcame this by testing different color combinations and layouts until I found one that looked good and was easy to read. Publishing the site also took some trial and error, but I learned how to upload and host it properly.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleAnswer(1)">
+                    <div class="card-front">
+                        <i class="fas fa-globe"></i>
+                        <p>What did you think of our service during the time you used it? Provide some constructive criticism or some features that impressed you.</p>
+                    </div>
+                    <div class="card-back" id="answer1">
+                        <p>I found it very convenient and easy to use. It made publishing my site quick and simple, especially with its automatic deployment feature. I was impressed by how it updates the site right after I push changes. One challenge I faced was setting up the deployment settings at first, but after exploring and following a few guides, it became much easier to manage.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleAnswer(2)">
+                    <div class="card-front">
+                        <i class="fas fa-star"></i>
+                        <p>Rank your 5 favorite and 5<br /> least favorite activities from this list: https://gist.github.com/laurajodz/<br />592402a6336410377dee1a744af846ab </p>
+                    </div>
+                    <div class="card-back" id="answer2">
+                        <p>
+                            Top 5 Favorites<ul>
+                                <li>Develop a code example to share with a customer.</li>
+                                <li>Write and maintain Support Guides for our product.</li>
+                                <li>Work with the development team to help design a new feature based on feedback from customers.</li>
+                                <li>Debug a customer build using a programming language and framework I''ve never seen before.</li>
+                                <li>Suggest and champion improvements to the Support team workflow.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            5 Least Favorites
+                            <ul>
+                                <li>Help manage communications during a service outage.</li>
+                                <li>Engage multiple users at once via chat to answer their questions and troubleshoot problems.</li>
+                                <li>Respond to Netlify customers on Twitter.</li>
+                                <li>Join a Zoom call with a VIP customer you've been helping via email.</li>
+                                <li>Manage a Support team.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleAnswer(3)">
+                    <div class="card-front">
+                        <i class="fas fa-link"></i>
+                        <p>Provide a link to documentation for a technical/developer-focused product, which you think are well done, and explain why you think they are well done.</p>
+                    </div>
+                    <div class="card-back" id="answer3">
+                        <p>One documentation I think is well done is the React documentation: https://react.dev/. It's well organized, easy to navigate, and uses clear examples that help both beginners and experienced developers understand concepts quickly. I also like that it includes interactive code samples, which make learning more engaging and practical.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleAnswer(4)">
+                    <div class="card-front">
+                        <i class="fas fa-tools"></i>
+                        <p>Explain, in a couple of paragraphs, what you think are two major challenges around DNS configuration for less-technical customers hosting websites.</p>
+                    </div>
+                    <div class="card-back" id="answer4">
+                        <p>One big challenge with DNS configuration is understanding all the technical terms and records like A, CNAME, and MX. It can be confusing to know which one to change and what values to put. Another challenge is waiting for DNS changes to update since it doesn't happen instantly. Sometimes it makes you think something's wrong when it just needs time to refresh.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleAnswer(5)">
+                    <div class="card-front">
+                        <i class="fas fa-envelope"></i>
+                        <p>A customer writes in to Support saying simply that their 'site won't build'. You have access to their build logs, and there you see this error: Build failed due to a user error: Build script returned non-zero exit code: 2. You have no more information than this and the site's source repository is private so you cannot test the build yourself. How would you troubleshoot this issue? What steps would you take? Also, please compose your best customer-facing first response.</p>
+                    </div>
+                    <div class="card-back" id="answer5">
+                        <p>
+                            Since the build failed with a non-zero exit code: 2 and I do not have access to the site source code, my first step would be to ask the customer for more details about their build setup, such as the framework or tools they are using (e.g., React, Next.js, or Hugo). I will also ask if they recently made any changes before the build started failing. Next, I will check the build logs closely for any error messages before the failure line, as these often reveal what caused the issue. If nothing stands out, I will suggest the customer try running the build locally to see if they get the same error, which could help identify missing dependencies or configuration issues. <br /> <br />Customer-facing first responses: <br />
+                        </p>
+                        <p style="text-align: left"> Hello, <br /><br />Thanks for reaching out! I took a look at your build logs and saw the message 'Build failed due to a user error: Build script returned non-zero exit code: 2.' This usually means something went wrong during the build process, but we will need a bit more information to pinpoint the cause. <br /> <br />Could you please share which framework or build tool your site uses and whether you have made any recent updates before the error appeared? If possible, try running the build locally and let us know if you see the same error message, it can help us narrow it down faster. <br /> <br />Once we have a bit more detail, we will help you get the site building again. <br /> <br /> Christian Jay C. Santiago</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleAnswer(6)">
+                    <div class="card-front">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>How would you set up an http 301 status redirect from /netlify/anything on your site, to https://www.google.com/search?q=anything. Please provide the redirect formatting here. Now, how about a proxy redirect? Please add that proxy redirect rule directly to your site!</p>
+                    </div>
+                    <div class="card-back" id="answer6">
+                        <p>In your redirects file (placed in your site root folder), you will add this line - /netlify/:anything  https://www.google.com/search?q=:anything  301 <br /> Next is the Proxy redirect, If instead of redirecting the user away, you want your site to fetch and serve the content from the destination (a proxy), you will use - /netlify/:anything  https://www.google.com/search?q=:anything  200</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleAnswer(7)">
+                    <div class="card-front">
+                        <i class="fas fa-laptop"></i>
+                        <p>Please attempt to deploy a function on our service. This need not be complicated. It could be "Hello World". Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.</p>
+                    </div>
+                    <div class="card-back" id="answer7">
+                        <p>
+                            I created a simple 'Hello World' serverless function to try deploying it. I set up a small project folder with a netlify/functions/hello.js file containing a basic function that returns a 200 response with 'Hello World'. I then pushed the project to GitHub and connected it to the service for deployment.<br />
+                            During the first deploy, I got an error saying the function directory could not be found. I realized I had not configured the functions directory correctly in the build settings. After checking the documentation, I updated the netlify.toml file to include:
+                        </p><p style="text-align: left"> [build]<br /> functions = "netlify/functions" <br /> <br /></p> <p>
+                            Once I redeployed, the function worked and I could access it through the generated endpoint. <br />If I had encountered further errors, my next steps would have been to check the build logs for specific messages, confirm my Node version, and test the function locally using the Netlify CLI. Overall, the process was straightforward once I corrected the directory configuration.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleAnswer(8)">
+                    <div class="card-front">
+                        <i class="fas fa-microphone"></i>
+                        <p>We understand you don't know anything about our internal procedures at this stage, but we want you to explain at a high level how you'd react to this situation: You receive a report of a severe security issue on www.netlify.com. You can't immediately confirm the report, so what steps might you take to investigate or substantiate the report? What might you say to the reporter, even though we haven't confirmed their assertion yet, that will instill confidence that our business is very concerned about security? You believe there is a reasonable chance the report is correct and the problem is very large and impactful. How might you escalate?</p>
+                    </div>
+                    <div class="card-back" id="answer8">
+                        <p>If I received a report of a severe security issue on www.netlify.com, my first step would be to acknowledge the report quickly and professionally. Even before confirming the issue, I will thank the reporter for bringing it to our attention and assure them that security is a top priority. I will let them know that the report has been shared with our security team for immediate investigation, and that we will follow up once we have gathered more information. This helps build trust and shows we take the matter seriously, even before verification.<br /> Internally, I will review the details provided in the report, such as affected endpoints, payloads, or screenshots,and also try to replicate the issue in a safe testing environment if possible. If I could not confirm it myself, I will document everything clearly and escalate immediately to the security or engineering leads, marking it as high priority given the potential impact. I will make sure relevant stakeholders, like the incident response or communications teams, are informed so the issue can be handled promptly and carefully.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/ceeejay.santiago" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/christian-jay-santiago-127b8b380/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/ceeejay_santiago/?next=%2F" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cjsantiago691@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
